@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+    score board
+*/
+.score-board {
+    border: 3px solid white;
+    width: 200px;
+    align-items: center;
+    margin: auto;
+    font-size: large;
+    border-radius: 10px;
+    position: relative;
+}
+
+.badge {
+    background-color: rgba(231, 8, 8, 0.767);
+}
+
+#user-score {
+    font-size: x-large;
+}
+
+#computer-score {
+    font-size: x-large;
+}
+
+#user-label {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 25px;
+    right: -30px;
+}
+
+/*
+    choices - images
+*/
+.choice {
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #464646;
+}
+
+.green-glow {
+    border: 3px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43e;
+}
+
+.red-glow {
+    border: 3px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 3px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}

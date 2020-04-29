@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <!--Heading-->
+    <header>
+        <h2 class="text-center my-3 py-3 text-white">Rock Paper Scissors</h2>
+    </header>
+    <!--Scoreboard-->
+    <div class="score-board text-white text-center my-4 py-3">
+        <div id="user-label" class="badge">User</div>
+        <span id="user-score">0</span> :
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="computer-score">0</span>
+    </div>
+    <!--Results text-->
+    <div class="result text-center text-white">
+        <h4></h4>
+    </div>
+    <!--Choices for user to select - added images-->
+    <div class="choices mt-3 text-center">
+        <div class="choice" id="r">
+            <img src="images/rock.png" alt="Rock" width="150" height="150">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/paper.png" alt="Paper" width="150" height="150">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors.png" alt="Scissors" width="150" height="150">
+        </div>
+    </div>
+    <!--Action message for user-->
+    <h5 class="text-center text-white my-3">Make your move!</h5>
+
+    <script src="static/js/app.js"></script>
+
+    <!--Bootstrap JS files-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
