@@ -40,6 +40,8 @@ function win(userChoice, computerChoice) {
                             ${convertLetterToWord(computerChoice)}${smallCompWord}. You win! <i class="far fa-thumbs-up"></i>`;
     userChoiceDiv.classList.add("green-glow");
     setTimeout(() => userChoiceDiv.classList.remove("green-glow"), 300);
+
+    gameWinner();
 }
 
 function lose(userChoice, computerChoice) {
@@ -53,6 +55,8 @@ function lose(userChoice, computerChoice) {
                             ${convertLetterToWord(computerChoice)}${smallCompWord}. You lose! <i class="far fa-thumbs-down"></i>`;
     userChoiceDiv.classList.add("red-glow");
     setTimeout(() => userChoiceDiv.classList.remove("red-glow"), 300);
+
+    gameWinner();
 }
 
 function draw(userChoice, computerChoice) {
@@ -101,3 +105,32 @@ function main() {
     scissors_div.addEventListener("click", () => game("s"));
 }
 main();
+
+// disable clicks once game is over
+// function disableClick() {
+//     rock_div.style.pointerEvents = 'none';
+//     paper_div.style.pointerEvents = 'none';
+//     scissors_div.style.pointerEvents = 'none';
+// }
+
+// Shows winner of game
+function gameWinner() {
+    if(userScore == 10) {
+        result_div.innerHTML = "User wins the game!";
+        // disableClick();
+        reset();
+    } else if(computerScore == 10) {
+        result_div.innerHTML = "Computer wins the game!";
+        // disableClick();
+        reset();
+    }
+}
+
+// Reset game
+function reset() {
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.innerHTML = 0;
+    computerScore_span.innerHTML = 0;
+    console.log("Hello");
+}
